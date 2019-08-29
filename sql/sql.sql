@@ -5,7 +5,6 @@ CREATE DATABASE InformaionLookupSystem;
 -- CID   = Console ID 
 -- NID   = Release Note ID
 -- CPID  = Client Profile ID
--- UIMG  = User Image
 
 -- Make tables
 CREATE TABLE games (
@@ -15,19 +14,22 @@ CREATE TABLE games (
     description        VARCHAR(250)  NULL,
     stock              INT(11)       NULL,   
     price              INT(11)       NULL,
-	PRIMARY KEY (GID)
-    FOREIGN KEY (CID)
+    device             INT(11)       NULL,
+	PRIMARY KEY (GID),
+    FOREIGN KEY (CID) REFEERENCES Console(CID)
 );
-
+ 
 CREATE TABLE Console (
   CID                INT(11)       NOT NULL AUTO_INCREMENT,
-  GID                INT(11)       NOT NULL AUTO_INCREMENT,
+  GID                INT(11)       NOT NULL,
   title              INT(11)       NOT NULL,
   description        Varchar(250)  Null,
   followers          INT(11)       NULL,
   PRIMARY KEY (CID),
-  FOREIGN KEY (GID), 	
+  FOREIGN KEY (GID)	
 );
+
+
 
 CREATE TABLE releaseNotes (
 

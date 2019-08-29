@@ -1,0 +1,48 @@
+body
+{
+background-color: black;
+width: 100%;
+background-image: url(../img/installation.jpg);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.card {   
+    text-align: center;
+transition: .3s;
+bottom: 0; 
+background: rgb(0, 0, 0); 
+background: rgba(0, 0, 0, 0.5); 
+color: mediumaquamarine; 
+width: 100%; 
+padding: 20px; 
+}
+
+.card:hover {
+  box-shadow: 06px 06px  06px 06px  rgba(0, 204, 204);
+}
+
+#console
+{
+    padding: 10px 30px; 
+    margin-top: 30px;
+    border: 20px;
+}
+
+#contentArea
+{
+    padding-bottom: 200px;
+}
+#footer {
+    margin-top: 20px;
+    background-color: black;
+    background: rgba(0, 0, 0, .9); 
+    padding: 55px;
+    color: aquamarine;
+    align-content: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    }

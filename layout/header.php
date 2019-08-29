@@ -1,79 +1,74 @@
 <?php
 /*---------------------------------------------
-require_once "./myDBEnter.php";
+require_once "./myDB/worker.php";
 require_once "./css/head.css"
 ---------------------------------------------*/
 ?>
     <!DOCTYPE HTML>
 <html> 
-    <head> 
+    <head>  
 <title>Game Hub</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/head.css">
-<link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./css/footer.css">
-<!---------------------------------------------
-    <style>
-    .hidden
-    {
-    display: none !important;
-    }
-    </style> 
---------------------------------------------->
-    <?php
-/*
-    if (array_key_exists("user", $_SESSION)) 
-    {
-    require_once("./layouts/accountOrNot/userHead.php");
-    } 
-    else 
-    {
-    require_once("./layouts/accountOrNot/guestHead.php");
-    }
-*/ ?> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- Icon library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!-- myStylSheet -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head> 
+    <header>
+   
+  
+<!---------------------------------------------------------------------------------------->
+<!-- NavBar--> 
 
- 
-    <!-- NavBar--> 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Game hub</a>
-    <img class="logo" src="./img/icon/logo.jpg" width="50px" height= "50px">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        
+
+    <!--navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-     <li class="nav-item"> <a class="nav-link" href="index.php">Home</a></li>
-     <li class="nav-item"> <a class="nav-link" href="#">About Us</a></li> 
-     <li class="nav-item"> <a class="nav-link" href="#">Shopping</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
     </ul>
-        
-      <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search" name="search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
   </div>  
 </nav>
-   
-        <div class="jumbotron">
-        <h1>Product Information </h1>  
-        </div> 
-        
-    </head>
+
+ <!---------------------------------------------------------------------------------------------------> 
+   <div class='container-fluid'>
+    <div style=" padding-bottom: 50px; ; top:80px; left:10px; right:10px; text-align:center;" id="particles-js">
+    <?php
+/*  
+$ = DB::queryFirstField("SELECT COUNT(*) FROM accounts");
+$username = DB::queryFirstRow("SELECT * FROM accounts WHERE username=%s", '')
+*/
+?>
+    <h1>Welcome <?php /*echo $userName */?></h1>
+            </div>
+    <script type="text/javascript" src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    </div>
+ 
     
-    <body>
-        
-    <!--Body Continues on index.php and ends in footer.php-->
+<!-------------------------------------------------------------------------------------------------->
+    </header>
+
+    
