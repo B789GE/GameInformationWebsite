@@ -1,8 +1,8 @@
 body
 {
 background-color: black;
+background-image: url(../img/Wall.jpg);
 width: 100%;
-background-image: url(../img/installation.jpg);
 background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
@@ -10,16 +10,15 @@ background-size: cover;
 
 
 .card {   
-    text-align: center;
+text-align: center;
 transition: .3s;
 bottom: 0; 
 background: rgb(0, 0, 0); 
 background: rgba(0, 0, 0, 0.5); 
 color: mediumaquamarine; 
-width: 100%; 
-padding: 20px; 
+width: 100%;  
 }
-
+ 
 .card:hover {
   box-shadow: 06px 06px  06px 06px  rgba(0, 204, 204);
 }
@@ -31,10 +30,7 @@ padding: 20px;
     border: 20px;
 }
 
-#contentArea
-{
-    padding-bottom: 200px;
-}
+
 #footer {
     margin-top: 20px;
     background-color: black;

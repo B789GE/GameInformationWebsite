@@ -1,9 +1,8 @@
 <?php
-/*---------------------------------------------
+require_once "./myDB/myDBEnter.php";
 require_once "./myDB/worker.php";
-require_once "./css/head.css"
----------------------------------------------*/
-?>
+
+?> 
     <!DOCTYPE HTML>
 <html> 
     <head>  
@@ -22,50 +21,45 @@ require_once "./css/head.css"
 <!-- myStylSheet -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/head.css">
-    <link rel="stylesheet" href="./css/footer.css">
-</head> 
+    
+</head>  
     <header>
-   
-  
 <!---------------------------------------------------------------------------------------->
-<!-- NavBar--> 
-
-
     <!--navbar-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Tech Insight</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Support</a>
       </li>    
     </ul>
   </div>  
-</nav>
+</nav> 
 
  <!---------------------------------------------------------------------------------------------------> 
    <div class='container-fluid'>
-    <div style=" padding-bottom: 50px; ; top:80px; left:10px; right:10px; text-align:center;" id="particles-js">
+    <div id="particles-js">
     <?php
 /*  
 $ = DB::queryFirstField("SELECT COUNT(*) FROM accounts");
 $username = DB::queryFirstRow("SELECT * FROM accounts WHERE username=%s", '')
 */
 ?>
-    <h1>Welcome <?php /*echo $userName */?></h1>
-            </div>
+    <h1> <?php /*echo $userName */?></h1>
+            </div><!--End div id particles-js-->
     <script type="text/javascript" src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
-    </div>
+    </div><!--End of container-fluid-->
  
     
 <!-------------------------------------------------------------------------------------------------->
